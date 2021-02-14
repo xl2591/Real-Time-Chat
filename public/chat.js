@@ -9,7 +9,7 @@ button.addEventListener('click', function(){
 
     socket.emit('sendingMessage',{
         message:message.value,
-        username:user.value,});
+        username:username.value,});
     
 }); 
 
