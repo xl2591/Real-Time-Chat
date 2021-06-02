@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.mm": "c",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "regex": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="GsSCMr" name="IIR" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="new">
+  <MAINGROUP id="pBqRoz" name="IIR">
+    <GROUP id="{AC166A1E-5188-03BA-9836-8EE290218FC6}" name="Source">
+      <GROUP id="{32608855-EA5E-C521-A07D-9C5BFCB48ACD}" name="Demo">
+        <FILE id="JUYWiZ" name="Delay.cpp" compile="1" resource="0" file="Source/Demo/Delay.cpp"/>
+        <FILE id="ZtnHV5" name="Delay.h" compile="0" resource="0" file="Source/Demo/Delay.h"/>
+        <FILE id="q4wJMV" name="IIRFilter.cpp" compile="1" resource="0" file="Source/Demo/IIRFilter.cpp"/>
+        <FILE id="iywGV8" name="IIRFilter.h" compile="0" resource="0" file="Source/Demo/IIRFilter.h"/>
+        <FILE id="SFl6TI" name="TenTapDelay.cpp" compile="1" resource="0" file="Source/Demo/TenTapDelay.cpp"/>
+        <FILE id="g12EMr" name="TenTapDelay.h" compile="0" resource="0" file="Source/Demo/TenTapDelay.h"/>
+        <FILE id="aQ1oHW" name="Test.cpp" compile="1" resource="0" file="Source/Demo/Test.cpp"/>
+        <FILE id="eKHc2T" name="Test.h" compile="0" resource="0" file="Source/Demo/Test.h"/>
+      </GROUP>
+      <GROUP id="{98EF531F-2BCD-9188-F85A-165066140FE4}" name="lib">
+        <FILE id="qdBSfr" name="ht_const.cc" compile="1" resource="0" file="Source/lib/ht_const.cc"/>
+        <FILE id="m4s6dD" name="ht_const.h" compile="0" resource="0" file="Source/lib/ht_const.h"/>
+        <FILE id="pZRrAG" name="ht_env.h" compile="0" resource="0" file="Source/lib/ht_env.h"/>
+        <FILE id="Kcorls" name="ht_filter.h" compile="0" resource="0" file="Source/lib/ht_filter.h"/>
+        <FILE id="F5HT4R" name="ht_filter_design.cc" compile="1" resource="0"
+              file="Source/lib/ht_filter_design.cc"/>
+        <FILE id="ssN8Ct" name="ht_filter_design.h" compile="0" resource="0"
+              file="Source/lib/ht_filter_design.h"/>
+        <FILE id="uYEW36" name="ht_fx.h" compile="0" resource="0" file="Source/lib/ht_fx.h"/>
+        <FILE id="R1gpKo" name="ht_include.h" compile="0" resource="0" file="Source/lib/ht_include.h"/>
+        <FILE id="QI0uwx" name="ht_nonlinear.h" compile="0" resource="0" file="Source/lib/ht_nonlinear.h"/>
+        <FILE id="bjnuCc" name="ht_util.h" compile="0" resource="0" file="Source/lib/ht_util.h"/>
+      </GROUP>
+      <FILE id="RV5twA" name="IAudioProcessor.h" compile="0" resource="0"
+            file="Source/IAudioProcessor.h"/>
+      <FILE id="mnvTR0" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="qdds8B" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="e4FHzw" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="fsJwOq" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="IIR"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="IIR"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../hotone/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../hotone/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
